@@ -1,0 +1,31 @@
+<html lang="fa">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Open File</title>
+</head>
+
+<body>
+    <div>
+        <label for="file_name">Select a CSV file</label>
+
+        <input type="file" id="file_name" accept=".csv" />
+
+        <button id="select_button">Select a CSV file </button>
+        <input type="text" value="0" id="column_number" placeholder="Please enter the column number" />
+        <input type="text" id="site_url" placeholder="Please enter the site URL" />
+        <p style="display:inline-flex; justify-content:center; width: 100%;">
+            <button id="remove_button">Remove</button>
+            <button id="login_button">Login with Google</button>
+    </div>
+
+    </div>
+</body>
+<!-- some content and elements -->
+<script src="bundle.js"></script>
+<script src="openFile.js"></script>
+
+
+</html>

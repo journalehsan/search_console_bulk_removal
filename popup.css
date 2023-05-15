@@ -1,0 +1,66 @@
+/* Style sheet for pop-up remove links */
+
+
+/* Set the font family and size for the whole page */
+
+body {
+    font-family: "SegoeUI", sans-serif;
+    font-size: 16px;
+}
+
+
+/* Center the div element and give it some padding and border */
+
+div {
+    margin: 1px !important;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+/* Set the color and alignment for the h1 element */
+
+h1 {
+    color: #333;
+    text-align: center;
+}
+
+
+/* Set the color and margin for the p element */
+
+p {
+    color: #666;
+    margin: 10px;
+}
+
+
+/* Style the input elements */
+
+input {
+    display: block;
+    width: 100%;
+    margin: 10px auto;
+    padding: 5px;
+}
+
+
+/* Style the button element */
+
+button {
+    display: block;
+    width: 40%;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+
+/* Change the button color on hover */
+
+button:hover {
+    background-color: #666;
+}

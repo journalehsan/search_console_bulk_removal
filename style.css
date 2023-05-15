@@ -1,0 +1,51 @@
+/* CSS style for the HTML code */
+
+
+/* Set the background to a radial gradient with light blue and white colors */
+
+body {
+    background: radial-gradient(lightblue, white);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 16px;
+}
+
+
+/* Center the div element and give it a white rounded border */
+
+div {
+    margin: auto;
+    width: 50%;
+    border: 1px solid white;
+    border-radius: 25px;
+    padding: 20px;
+    background-color: white
+}
+
+
+/* Style the label and input elements */
+
+label,
+input {
+    display: block;
+    margin: 10px;
+}
+
+
+/* Style the button elements */
+
+button {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(24, 47, 54);
+    color: white;
+}
+
+
+/* Change the button color on hover */
+
+button:hover {
+    background-color: blue;
+}
