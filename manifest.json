@@ -1,7 +1,6 @@
 {
     "name": "Google Search Console Bulk Removal",
     "version": "0.2.1",
-    "content_security_policy": "script-src 'self' https://cdn.jsdelivr.net; object-src 'self'",
     "manifest_version": 3,
     "description": "This extension is intended to remove URLs in bulk in the search console section that is for removing URLs.",
     "action": {
