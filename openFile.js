@@ -10,30 +10,29 @@ var SCOPE = "https://www.googleapis.com/auth/webmasters";
 //when click on login_button call loginWithGoogle function
 // Get the button element
 var button = document.getElementById("login_button");
-addEventListener("click", loginWithGoogle);
+button.addEventListener("click", loginWithGoogle);
+
 
 // This function is called when the user clicks the button
 function loginWithGoogle() {
-    // Create a new OAuth2 object
-    var oauth2 = new OAuth2(CLIENT_ID, SCOPE);
+    // Get the message element
 
-    // Request an authorization code from Google
-    oauth2.requestAuthorizationCode(function(code) {
-        // If the user authorized the request, exchange the code for an access token
-        if (code) {
-            oauth2.exchangeCodeForToken(code, function(token) {
-                // If the token was successfully obtained, save it in local storage
-                if (token) {
-                    localStorage.setItem("google-token-for-search-console", token);
-                    alert("Token saved!");
-                } else {
-                    alert("Error getting token!");
-                }
-            });
-        } else {
-            alert("User canceled authorization!");
-        }
-    });
+    function init() {
+        gapi.load('auth2', function() {
+            // Now you can use gapi.auth2.authorize
+            gapi.auth2.authorize({
+                    client_id: CLIENT_ID,
+                    scope: SCOPE,
+                    immediate: false
+                },
+                handleAuthResult
+            );
+        });
+    }
+
+    alert('ok');
+    init(); // Call the init function
+
 }
 
 function remove_from_google_search_console() {

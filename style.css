@@ -1,51 +1,126 @@
-/* CSS style for the HTML code */
+/* Reset some default styles */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
 
-/* Set the background to a radial gradient with light blue and white colors */
+/* Use a custom font similar to Bing's Segoe UI */
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap');
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/* Use a gradient background like Bing's homepage */
 
 body {
-    background: radial-gradient(lightblue, white);
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background: radial-gradient(circle at center, #4a8cff, #6fd6ff);
+}
+
+
+/* Center the main content */
+
+#main {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+
+/* Center the div with id main horizontally and vertically using position and transform properties */
+
+#main {
+    position: absolute;
+    /* take it out of the normal flow */
+    left: 50%;
+    /* move it to the center of its parent horizontally */
+    top: 50%;
+    /* move it to the center of its parent vertically */
+    transform: translate(-50%, -50%);
+    /* adjust its position based on its own size */
+}
+
+
+/* Use a white card with rounded corners and drop shadow for the content */
+
+#main {
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+div {
+    padding: 10px;
+    line-height: 2;
+}
+
+
+/* Use a dark blue text for the title */
+
+h1 {
+    color: #1a0dab;
+    font-size: 36px;
+    font-weight: 500;
+}
+
+input[type="text"] {
+    display: block;
+    width: 100%;
+    margin: 10px auto;
+    padding: 5px;
+    border: solid 1px #ccc;
+    border-radius: 5px;
     font-size: 16px;
 }
 
 
-/* Center the div element and give it a white rounded border */
+/* Use a light gray text for the paragraph */
 
-div {
-    margin: auto;
-    width: 50%;
-    border: 1px solid white;
-    border-radius: 25px;
-    padding: 20px;
-    background-color: white
+p {
+    color: #8e8e93;
+    font-size: 18px;
 }
 
 
-/* Style the label and input elements */
+/* Use flexbox to align the buttons horizontally */
 
-label,
-input {
-    display: block;
-    margin: 10px;
+form {
+    display: flex;
 }
 
 
-/* Style the button elements */
+/* Style the buttons with blue text and border */
 
 button {
-    display: inline-block;
-    margin: 10px;
-    padding: 10px;
-    border: none;
+    color: #007aff;
+    font-size: 18px;
+    font-weight: 500;
+    border: solid 1px #007aff;
     border-radius: 10px;
-    background-color: rgb(24, 47, 54);
-    color: white;
+    padding: 10px 20px;
+    background-color: #efefef;
+}
+
+
+/* Add some space between the buttons */
+
+button+button {
+    margin-left: 20px;
 }
 
 
 /* Change the button color on hover */
 
 button:hover {
-    background-color: blue;
+    background-color: #007aff;
+    color: white;
 }
