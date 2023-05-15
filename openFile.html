@@ -6,17 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
 
-    <title>Google Search Console Bulk Removal</title>
+    <title>Google Search Console Bulk Removal Links</title>
 </head>
 
 <body>
     <div id="main">
         <div id="card-header">
-            <h1>Remove Links</h1>
+            <div style="text-align: center;">
+                <h1>Google Search Console Bulk Removal Links</h1>
+            </div>
             <p>You can select a CSV file that contains the links you want to remove.</p>
-            <label for="file_name">Select a CSV file</label>
-            <input type="file" id="file_name" accept=".csv" />
-            <button id="select_button">Select a CSV file </button>
+
+            <div style="text-align: center;">
+                <label for="file_name">Select a CSV file</label>
+                <input type="file" id="file_name" accept=".csv" />
+            </div>
+            <!-- <button id="select_button">Select a CSV file </button> -->
             <p style="display:inline-flex; justify-content:center; width: 100%;">
                 <input type="text" value="0" id="column_number" placeholder="Please enter the column number" />
                 <input type="text" id="site_url" placeholder="Please enter the site URL" />
